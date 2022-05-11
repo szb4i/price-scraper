@@ -1,0 +1,4 @@
+from binance.client import Client
+
+TRADE_SYMBOL="BTCBUSD"
+CANDLE_INTERVAL = Client.KLINE_INTERVAL_1MINUTE
