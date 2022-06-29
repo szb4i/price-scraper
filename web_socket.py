@@ -28,6 +28,7 @@ class WebSocket():
     def __on_close(self, ws, close_status_code, close_msg):
         self.__print_time()
         print("Connection Closed:" + "\n" + str(close_status_code) + "\n" + str(close_msg))
+        self.run_forever()
 
     def __on_error(self, ws, error):
         self.__print_time()
